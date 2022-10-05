@@ -50,3 +50,6 @@
    width: 100%; 
    border-radius: 100%;
 }
+.myPhoto:hover{
+    border: red solid 10px;
+}
