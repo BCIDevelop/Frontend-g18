@@ -28,6 +28,10 @@ header{
     align-items: center;
     padding: 10px;
     background-color: #00AF1C;
+    position: sticky;
+    width: 100%;
+    top: 0%;
+    left: 0%;
     
 }
 /* #Section */
