@@ -36,7 +36,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px;
+    padding: 50px;
     background-color: #7299FE;
     ;
 }
@@ -52,7 +52,8 @@
 font-style: normal;
 font-weight: 700;
 font-size: 22px;
-line-height: 25px;git 
+line-height: 25px;
+box-shadow: 0px 2px 4px black;
 }
 .second-section p{
     margin-top: 20px;
@@ -60,7 +61,7 @@ line-height: 25px;git
     font-family: Arial;
     font-size: 14px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 30px;
     letter-spacing: 0em;
     text-align: left;
     color: #F8F8F8;
