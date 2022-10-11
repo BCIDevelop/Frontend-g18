@@ -235,6 +235,12 @@ textarea{
 height: 56px;
 background-color: #233451;
 margin-top: 20px;
+color: #FFFFFF;
+font-family: 'Arial';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 21px;
 }
 .primer-campo{
     display: flex;
