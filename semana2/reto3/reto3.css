@@ -180,6 +180,9 @@ line-height: 41px;
     width: 140px;
     height: 92px;
 }
+img:hover{
+    transform: scale(1.25);
+}
 .section-clientes{
     display: flex;
     flex-direction: column;
