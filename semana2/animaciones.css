@@ -1,0 +1,114 @@
+.texto-animado{
+    animation-name: texto-volador;
+    animation-duration: 10s;
+    animation-iteration-count: 5;
+    border: solid;
+}
+
+@keyframes texto-volador {
+    from{
+        margin-left: 100%;
+        width: 350px;
+        background-color: aqua;
+        border: none;
+
+    }
+    to{
+        margin-left: -100%;
+        background-color: red;
+    }
+}
+.imagen-animada{
+    animation-name: imagen-volador;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes imagen-volador {
+    from{
+        width: 200px;
+        height: 100px
+    }
+    to{
+        width: 400px;
+        height: 200px;
+    }
+    
+}
+
+.box-uno{
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+    animation-name:box-animation;
+    animation-duration: 10s;
+    
+}
+@keyframes box-animation {
+    0%{
+        background-color: black;
+    }
+    25%{
+        background-color: aqua;
+    }
+    50%{
+        background-color: blue;
+    }
+    100%{
+        background-color: green;
+    }
+    
+}
+.bolita{
+    width: 100px;
+    border-radius: 50%;
+    height: 100px;
+    background-color: brown;
+    animation-name: bouncing;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bouncing{
+    0%{
+        transform: translateY(0px)
+    }
+    50%{
+        transform: translateY(-400px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.texto-animado-2{
+    animation: texto-animado-dos 5s steps(144) 1s normal both,
+    cursor 0.5s steps(50) infinite normal;
+    animation-iteration-count: infinite;
+}
+@keyframes texto-animado-dos {
+    from{
+        width: 0;
+    }    
+    to{
+        width: 600px;
+    }
+}
+.lineas{
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    font-size: 24px;
+    white-space: nowrap;
+    border-right:2px solid black;
+    transform:translateY(-50%) ;
+    overflow: hidden;
+}
+
+@keyframes cursor {
+    from{
+        border-right-color: red;
+
+    }
+    to{
+        border-right-color: transparent;
+    }
+}

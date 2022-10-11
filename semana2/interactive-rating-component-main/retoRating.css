@@ -1,0 +1,61 @@
+*{
+
+}
+
+.wrap{
+    display: flex;
+    width: 193.7vh;
+    height: 98vh;
+    justify-content: center;
+    align-items: center;  
+    background-color: hsl(216, 12%, 8%)
+}
+.card{
+    display: flex;
+    justify-content: space-around;
+    background-color: hsl(213, 19%, 18%);
+    flex-direction: column;
+    padding: 17px;
+    width: 350px;
+    height: 350px;
+    
+    border-radius: 15px;
+}
+.img-star{
+    width: 15px;
+    height: 15px;
+    
+}
+.circulo{
+    background-color: hsl(216, 12%, 54%);
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   opacity: 0.8; 
+   
+}
+.selector-container{
+    display: flex;
+    justify-content: space-around;
+}
+.btn-submit{
+    background-color: hsl(25, 97%, 53%);
+}
+.text-white{
+    color:hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+.text-gray{
+    color: hsl(217, 12%, 63%);
+    font-weight: 400;
+}
+.card button{
+    font-size: medium;
+    border-radius: 15px;
+    height: 40px;
+    border: 0px;
+
+}

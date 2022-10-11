@@ -28,16 +28,20 @@ header{
     align-items: center;
     padding: 10px;
     background-color: #00AF1C;
-    position: sticky;
+    position: fixed;
     width: 100%;
     top: 0%;
     left: 0%;
+    z-index: 1;
     
 }
 /* #Section */
 section{
     font-family: Arial, Helvetica, sans-serif;
    margin-left: 20px;
+}
+.home{
+    margin-top: 100px;
 }
 .home h2{
     color: #3B06D2;

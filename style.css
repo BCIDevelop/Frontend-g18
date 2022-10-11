@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+    background-color: #477b47;
+}
+.header{
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    
+}
+.header ul{
+    list-style: none;
+    display: flex;
+}
+header ul li{
+    padding: 15px;
+  
+}
+header ul li a{
+    text-decoration: none;
+    color: white;
+}
+.banner{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 10px 20px 10px;
+    
+    
+}
+.title{
+    font-size: 2em;
+}
+.resume{
+    width: 45%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.btn-primary{
+    width: 200px;
+    background-color: #ff6464;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    box-shadow: 0 15px 25px;
+    animation-name: flight-btn;
+    animation-duration:  4s;
+    animation-iteration-count: infinite;
+}
+@keyframes flight-btn {
+    from{
+        margin-left: 100%;
+    }
+    to{
+        margin-left: -0.7%;
+    }
+}
+.btn-primary:hover{
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+}
+.banner-resume{
+    width: 950px;
+    margin-left:20px ;
+}
+.img-profile{
+    width: 70%;
+    border-radius: 100%;
+    margin-left: 60px;
+}
+.card div img{
+    width: 20rem;
+    height: 100px;
+    border-radius: 8px;
+    box-shadow: 0 15px 25px;
+}
+.card{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+.card div{
+ margin-left: 30px;
+}
+.title-section{
+    margin-left: 40rem;
+    font-size: 30px;
+}
+.card div img:hover{
+    box-shadow:0 25px 35px red ;
+}
