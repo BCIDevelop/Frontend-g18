@@ -235,20 +235,20 @@ margin-top: 20px;
 }
 .primer-campo{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 20px;
     margin-bottom: 20px;
     width: 900px;
 }
 .segundo-campo{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 20px;
     margin-bottom: 20px;
     width: 900px;
 }
 .formContacto{
-    width: 900px;
+    width: 800px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -257,6 +257,6 @@ margin-top: 20px;
 }
 input{
     width: 363px;
-height: 59px;
+    height: 59px;
 }
 
