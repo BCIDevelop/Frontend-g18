@@ -83,7 +83,7 @@
 .progression-bar{
     display: flex;
     justify-content: space-around;
-    width: 1200px;
+    width: 900px;
 }
 .barra{
     background-color: #FFFFFF;
@@ -193,6 +193,7 @@ img:hover{
     padding: 30px;
     align-items: center;
     background-color: #3F4E62;
+    height: 258px;
     
 }
 .section-clientes h2{
@@ -208,7 +209,7 @@ line-height: 41px;
 .img-container-clientes{
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 40px;
     width: 1000px;
 }
 .section-contacto{
