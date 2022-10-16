@@ -1,7 +1,18 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+body,html{
+ width: 100%;
+}
+button{
+    cursor: pointer;
+}
+section{
+    width: 100%;
+}
+/* First Section */
 .first-section{
     background-image: url(./src/image\ 1.png);
     height: 780px;
@@ -33,6 +44,7 @@
 
     
 }
+/* Second section */
 .second-section{
     display: flex;
     flex-direction: column;
@@ -138,7 +150,7 @@ line-height: 41px;
 }
 .html{
     width: 319px;
-height: 20px;
+    height: 20px;
 }
 .css{
     width: 64px;
@@ -158,8 +170,9 @@ height: 20px;
 }
 .flex{
     width: 363px;
-height: 21px;
+    height: 21px;
 }
+/* Third Section */
 .section-portafolio{
     display: flex;
     flex-direction: column;
@@ -283,4 +296,158 @@ input{
     width: 363px;
     height: 59px;
 }
+@media only screen and (min-width:375px) and (max-width:600px){
+    .text-title{
+        font-size: 20px;  
+        height: 40px; 
+    }
+    .first-section{
+        height: 300px;
+    }
+    .first-section h3{
+        left: 20px;
+        font-size: 30px;
+        width: 200px;
+    }
+    .second-section p{
+        font-size: 10px;
+    }
+    .progression-bar{
+        width: 450px;
+    }
+    .barra{
+        width: 150px;
+    }
+    .html{
+        width:80%;
+    }
+    .js{
+        width: 60%;
+    }
+    .vue{
+        width: 30%;
+    }
+    .flex{
+        width: 70%;
+    }
+    .grid{
+        width: 49%;
+    }
+    .img-container{
+        width: 300px;
+    }
+    .img-portafolio{
+        width: 120px;
+        height: 60px;
+    }
+    .img-container-clientes{
+      width: 400px;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .img-container-clientes img{
+        width: 80px;
+        height: 60px;
+    }
+    .formContacto{
+        width: 400px;
+    }
+   /*  .primer-campo{
+        width: 450px;
+    }
+    .segundo-campo{
+        width: 450px;
+    } */
+    .formContacto div{
+        width: 400px;
+    }
+    .formContacto input{
+        width: 180px;
+        height: 30px;
+    }
+    textarea{
+        width: 95%;
+    }
+    .primer-campo{
+        margin-left: 20px;
+    }
 
+}
+@media only screen and (min-width:600px) and (max-width:950px){
+    .text-title{
+        font-size: 22px;  
+        height: 40px; 
+    }
+    .first-section{
+        height: 500px;
+    }
+    .first-section h3{
+        left: 20px;
+        font-size: 30px;
+        width: 200px;
+        top: 50%;
+    }
+    .second-section p{
+        font-size: 12px;
+    }
+    .progression-bar{
+        width: 550px;
+    }
+    .barra{
+        width: 250px;
+    }
+    .html{
+        width:80%;
+    }
+    .js{
+        width: 60%;
+    }
+    .vue{
+        width: 30%;
+    }
+    .flex{
+        width: 70%;
+    }
+    .grid{
+        width: 49%;
+    }
+    .img-container{
+        width: 500px;
+    }
+    .img-portafolio{
+        width: 200px;
+        height: 60px;
+    }
+    .img-container-clientes{
+      width: 700px;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .img-container-clientes img{
+        width: 170px;
+        height: 60px;
+    }
+    .formContacto{
+        width: 500px;
+    }
+   /*  .primer-campo{
+        width: 450px;
+    }
+    .segundo-campo{
+        width: 450px;
+    } */
+    .formContacto div{
+        width: 500px;
+    }
+    .formContacto input{
+        width: 225px;
+        height: 40px;
+    }
+    textarea{
+        width: 95%;
+    }
+    .primer-campo{
+        margin-left: 20px;
+    }
+
+}
