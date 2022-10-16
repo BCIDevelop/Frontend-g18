@@ -9,6 +9,7 @@
     background-size: cover;
     padding-top:50px ;
     position: relative;
+    width: 100%;
 }
 .text-title{
     text-align: center;
@@ -131,6 +132,9 @@ line-height: 41px;
     width: 319px;
     height: 20px;
     border-radius: 10px;
+}
+.progress:hover{
+    transform: scale(1.02);
 }
 .html{
     width: 319px;

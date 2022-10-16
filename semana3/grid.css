@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    display: grid;
+  
+}
+.container div{
+   background: #ecf0f1;
+   padding: 1em;
+}
+.container div:hover{
+    border:1px solid #f1c40f
+}
+.item1{
+}
+   

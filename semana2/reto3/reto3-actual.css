@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+}
+h1,h2{
+    font-weight: bold;
+}
+h1{
+    font-size: 3rem;
+}
+.wrapper{
+    max-width: 960px;
+    margin:auto   
+}
+/* Banner */
+.banner img{
+    width: 100%;
+    display: block;
+}
+.banner{
+    position: relative;
+    color: white;
+
+}
+.banner h1,.banner h2{
+    position: absolute;
+}
+.banner h1{
+    width: 100%;
+    text-align: center;
+    top: 50px;
+}
+.banner h2{
+    left: 80px;
+    bottom: 90px;
+    padding: 22px 18px;
+    border-radius: 10px;
+    line-height: 2rem;
+    color: #7299fe;
+}
+/* About me */
+.about-me{
+    padding: 34px 42px 72px;
+}
+.about-me h2{
+    text-align: center;
+    padding: 20px;
+    color: blue;
+}
+.about-me p{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.about-me button{
+    display: block;
+    width: 5rem;
+    height: 2rem;
+    border: none;
+    border-radius: 3px;
+    background-color: #D16FFF;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0px 2px 20px 0px gray;
+}
+
+/* Skills */
+.skills{
+    padding: 34px 65px 88px;
+    background-color: #9022ff;
+
+}
+.skills h2{
+    color: #26CC4B;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.skills h3{
+    color: #fff;
+}
+.skills .list-bar, .list-item div{
+    border-radius: 8px
+} 
+.skills .list-item .list-bar{
+    background-color:#fff ;
+}

@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border: solid;
+}
+.form{
+    border:2px solid #ccc;
+    padding: 50px;
+    border-radius: 8px;
+}
+.form h2{
+    letter-spacing: 2px;
+    color:blue;
+}
+.input-form{
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+}
+/*
+    linear misma velocidad desde que empieza hasta termina 
+    ease-in : empieza lento y acaba rapido, ease-out empieza
+    lento y acaba rapido ease-in-out empieza lento y acaba rapido
+*/
+.btn-primary{
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    border: solid;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    background-color: rgb(33, 168, 253);
+    transition:background-color ease-out 0.5s;
+}
+.btn-primary:hover{
+    background-color: yellow;
+}
+.container-help{
+    transition: ease-in 5s;
+}
+.text-help{
+    display: none;
+    max-width: 300px;
+    min-width: 300px;
+    transition: ease-in 2s;
+}
+.btn-help{
+    border: none;
+    background-color: transparent;
+  
+   
+}
+.container-help:hover + .text-help{
+    display: block;
+}
+
