@@ -5,7 +5,9 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+.wrapper{
+    max-width: 1500px;
+}
 
 .header{
     display: flex;
