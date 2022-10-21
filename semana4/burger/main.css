@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 63%;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(./img/1186452.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    min-height:8vh;
+
+}
+.link-menu{
+    display: flex;
+
+}
+.link-menu li{
+    padding: 0 40px;
+    list-style-type: none;
+    transition: 0.3s;
+}
+.link-menu li:hover{
+    background-color: rgb(62, 130, 198);
+}
+.link-menu a{
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #fff;
+}
+.ham{
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+.ham span{
+    background-color: #fff;
+    display: block;
+    height: 3px;
+    width: 28px;
+    margin: 10px auto;
+    border-radius: 10px;
+
+}
+/* Responsive web design */
+@media (max-width:750px){
+    body{
+        overflow: hidden;
+
+    }
+    .ham{
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        top: 15px;
+        right: 25px;
+        transition: 0.2s 0.1s;
+    }
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 28px;
+        padding-bottom: 28px;
+    }
+    .link-menu{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 92vh;
+        opacity: 0;
+        transition: opacity 5s ease-in;
+        width: 100%;
+        
+    }
+    .link-menu li{
+        text-align: center;
+        width: 100%;
+        padding: 20px;
+    }
+
+}
+/* animaciones */
+@keyframes muestra-menu {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    
+}
+.link-menu.activado{
+    display: flex;
+    animation: muestra-menu 350ms ease-in-out both;
+
+}
+.br-1.animado{
+    transform: rotateY(-45deg) translate(-10px,8px);
+}
+.br-2.animado{
+    opacity: 0;
+}
+.br-3.animado{
+    transform: rotatey(45deg) translate(-10px,-8px);
+    
+}
+.br-4.animado{
+    opacity: 0;
+    
+}

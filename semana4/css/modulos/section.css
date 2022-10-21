@@ -1,0 +1,66 @@
+
+
+.section{
+    padding: var(--padding-section);
+    padding-bottom:var(--padding-section) ;
+}
+.section--hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: radial-gradient(var(--primary-theme-color),var(--secondary-theme-color));
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+.section__link{
+    color: var(--primary-text-color);
+    text-decoration: none;
+    animation: zoom 1s ease-in-out 0s infinite alternate;
+}
+.section__link--hero{
+    display: flex;
+    gap: 0.25rem;
+    font-weight: bold;
+    font-size: 4rem;
+}
+.section__link-letter{
+    position: relative;
+    transition: filter 0.25s;
+    
+}
+.section__link-letter:hover{
+    filter: brightness(2.5);
+}
+.section__link-letter:nth-child(1){
+    color: var(--letter-color-1);
+}
+.section__link-letter:nth-child(2){
+    color: var(--letter-color-2);
+
+}
+.section__link-letter:nth-child(3){
+    color: var(--letter-color-3);
+
+}
+.section__link-letter:nth-child(4){
+    color: var(--letter-color-4);
+
+}
+.section__link-letter:nth-child(5){
+    color: var(--letter-color-5);
+
+}
+.section__link-letter::before{
+    content: var(--letter);
+    position: absolute;
+    top: 60%;
+    left: 0;
+    filter: blur(0.125rem);
+    transform: rotateX(140deg);
+}
+.section__link-letter::after{
+    content: var(--letter);
+    position: absolute;
+    transform: scale(1.125);
+    filter: blur(0.25rem);
+}
