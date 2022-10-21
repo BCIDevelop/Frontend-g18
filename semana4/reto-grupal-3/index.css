@@ -63,6 +63,9 @@ body,html{
     text-decoration: none;
     color: #000000;
 }
+.nav ul a:hover{
+    border-bottom: 1px solid blue;
+}
 /* section */
 section{
     margin-top: 30px;
@@ -80,11 +83,13 @@ section{
 }
 .image-bg h1{
     font-weight: 300;
-    font-size: 30px;
+    font-size: 2.5rem;
 }
 .image-bg p{
     width: 50%;
     font-size: 1rem;
+    color: rgba(255, 255, 255, 0.78);
+    letter-spacing: 0.06em;
 }
 .image-bg div{
     width: 100%;
@@ -120,13 +125,13 @@ section{
     border: 1px solid #000000;
     height: 100%;
     box-sizing: border-box;
-    width: 95%;
+    width: 100%;
     border-left: transparent;
     border-bottom-right-radius: 8px;
     border-top-right-radius: 8px;
 }
 .articles form figure{
-    height: 100%;
+    
     background-color: #F4F4F4;
     border: 1px solid #000000;
     border-right: transparent;
@@ -149,7 +154,7 @@ section{
 /* articles card */
 .article-body{
     display: flex;
-    height:250px ;
+    
 }
 .articles h4{
     color:#356EAD;
@@ -173,7 +178,6 @@ section{
 }
 .article-body figure img{
     width: 100%;
-    height: 100%;
 }
 .article-body h2{
     color:#1F3F68;
@@ -204,6 +208,10 @@ section{
     width: 10px;
     height: 10px;
     padding: 10px;
+    cursor: pointer;
+}
+.article-text img:hover{
+    transform: scale(1.2);
 }
 
 /* Second article part */
@@ -217,13 +225,13 @@ section{
 .second-article-body{
     justify-content: space-between;
     margin-top: 1rem;
-    height: 300px;
+    
 }
 .article-bottom{
-    width: 33%;
+    width: 30%;
 }
 .article-bottom figure{
-    width: 95%;
+    width: 100%;
 }
 .whole-article{
     display: flex;
@@ -237,9 +245,7 @@ section{
 }
 
 /* All article section */ 
-.all-article-section  .article-body{
-    height: 160px
-}
+
 .all-article-section article{
     margin-top: 1.2rem;
 }
@@ -273,7 +279,7 @@ section{
  /* footer */   
  footer{
     background-color: #316099;
-    height: 750px;
+    
     color: #fff;
     
     
@@ -290,11 +296,7 @@ section{
     
     margin: 0;
  }
- .footer-first-section{
-   
-    height: 45%;
-    
- }
+
  .footer-first-section button{
     cursor: pointer;
     background-color: #5A98D0;
@@ -322,9 +324,7 @@ section{
     margin-top: 1.2rem;
     line-height: 1.4rem;
  }
- .footer-second-section{
-    height: 55%;
- }
+
 
  .footer-links{
     display: flex;
