@@ -1,0 +1,57 @@
+.circle {
+  width: 30.9px;
+  height: 32px;
+  position: absolute;
+  border: 1px solid #316099;
+  border-radius: 50%;
+  top: 10px;
+}
+
+.circle1 {
+  background-color: #316099;
+  left: 20px;
+}
+
+.circle2 {
+  left: 40px;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.circle-container {
+  display: flex;
+  position: relative;
+  height: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 45px;
+  margin-top: 10px;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav ul li {
+  list-style: none;
+  padding: 7px;
+  margin-right: 10px;
+}
+
+.nav ul a:hover {
+  border-bottom: 1px solid blue;
+}
+
+.nav ul a {
+  color: #000;
+  line-height: 0.5rem;
+}
+
+/* NAV LINKS *//*# sourceMappingURL=header.css.map */

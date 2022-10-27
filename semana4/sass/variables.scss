@@ -1,0 +1,14 @@
+/* variables scss */
+/* en saas podemos usar varibales para guardar color primario,secundario, fuentes,tamanos */
+/* la forma en las creamos la variable en saas es $nombreVariable: valor */
+$color-principal:rgb(109,219,174);
+$color-red:red;
+$padding-1:10px;
+@mixin alertita($bg:green,$color-text:#fff) {
+    background-color: $bg;
+    padding: $padding-1;
+    border-radius: $padding-1;
+    color: $color-text;
+    margin-bottom: $padding-1;
+  
+}
