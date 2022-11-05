@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+/* Se pueed crear variables para light mode en root y luego cuando cambies
+puedes a una clase puedes definir las varaibles con otro valor
+:root{
+    --colorLetter:#fff
+    --colorBack=#000
+}
+.{
+    
+}
+
+
+
+*/
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+    background-color: #fff;
+    color: #000;
+    justify-content: center;
+}
+.darkContainer{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+.switch{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    height: 40px;
+    aspect-ratio: 2/1;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(56, 56, 56);
+}
+.darkButton{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    height: 40px;
+    aspect-ratio: 2/1;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+}
+.circle{
+    height: 25px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: #fff;
+    transform: translateX(7px);
+    transition: 0.5s;
+}
+.darkCircle{
+    height: 25px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: #000;
+    transform: translateX(65px);
+    transition: 0.5s;
+}
+h1{
+    text-transform: uppercase;
+    font-size: 40px;
+}
+/* Button toggle */
+.btn-toggle{
+
+    padding:15px 30px;
+    color: #fff;
+    background-color: blue;
+}
+
+.btn-toggle-dark{
+    color: #000;
+    background-color: lightblue;
+}
+img{
+    width: 50px;
+    aspect-ratio: 1/1;
+}

@@ -1,0 +1,196 @@
+:root{
+    --primary-color:#222;
+    --backgroundStyle:#6c25be;
+    --primary-color-1:#fff;
+}
+.darkTheme{
+    --primary-color:rgba(240, 240, 240);
+    --backgroundStyle:#be2525;
+    --primary-color-1:#222;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+button{
+    cursor: pointer;
+}
+body{
+ font-family: Arial, Helvetica, sans-serif;
+ width: 100vw;
+ height: 100vh;
+ color: var(--primary-color);
+ background-color:var(--backgroundStyle) ;
+}
+
+/* header */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.circle-container{
+    width: 50px;
+    height: 25px;
+    border-radius: 10px;
+    border: 1px solid gray;
+   
+
+}
+.circle{
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    transform: translateX(3px);
+    background-image: url(./img/programador-logo.jpg);
+    background-size: cover;
+    transition: all 0.5s;
+  
+}
+.circle-dark{
+   transform: translateX(26px);
+   background-image: url(./img/hacker-logo.jpg);
+   background-position: center;
+}
+
+.container{
+    width: 100%;
+    height: 80%;
+    max-width: 1400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-weight: 400;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+form{
+    height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   text-align: center;
+}
+.log-in{
+    width: 30%;
+    padding: 20px;
+    background-color: var(--primary-color-1);
+}
+.figure{
+    width: 70%;
+    background-image:linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    ) 
+    ,url(./img/programador-light.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.figure-black{
+    background-image:linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    ) 
+    ,url(./img/programador-black.jpg);
+
+}
+.card .figure h2{
+    color: var(--primary-color);
+    word-spacing: 3px;
+    font-size: 2.2rem;
+}
+
+
+
+
+.card{
+    display: flex;
+    width: 80%;
+    height: 75%;
+    border: 1px solid black;
+    border-radius:20px ;
+}
+.card button{
+    padding: 8px 30px;
+    background-color: var(--backgroundStyle);
+    border-radius: 10px;
+    border: transparent;
+}
+article{
+    display: none;
+  
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    text-align: center;
+
+}
+/* Input */
+.input-container{
+    position: relative;
+}
+form input,.label,.text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+}
+form input{
+   
+
+    
+    padding: 16px;
+    width: 280px;
+    height: 48px;
+    border-radius: 4px;
+    
+}
+.label .text{
+    transition: all 0.15s ease-out;
+}
+.label{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 16px;
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+
+}
+form input:focus + .label .text, input:valid + .label .text{
+    font-size: 12px;
+    transform: translate(0,-140%);
+    background-color: #fff; 
+    padding-left: 4px;
+    padding-right: 4px;
+    color: blue;    
+}
+
+form input:focus + .label .text-dark{
+  
+    background-color: var(--primary-color); 
+  
+}
+
+
+form input:focus{
+    outline: none;
+    border: 2px solid blue;
+}
+input[value='hola']{
+    background-color: #be2525;
+    color: red;
+}

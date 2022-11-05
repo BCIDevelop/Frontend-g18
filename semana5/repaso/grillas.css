@@ -1,0 +1,19 @@
+.container{
+   background-color: #fff;
+   border: 5px solid #e1bee7;
+   display: grid;
+   height: 400px    ;
+   grid-template-columns: 150px 150px 150px;
+   grid-template-rows: 75px 75px ; 
+   place-content: center; /* ceentrar grilla vertical como horizontal 
+   en el contenedor en vez de usar justify-content:center y align-content:center */
+}
+body{
+    width: 100vw;
+    height: 100vh;
+   
+}
+.item{
+    border: 5px solid #00bcd4;
+    font-size: 4rem;
+}

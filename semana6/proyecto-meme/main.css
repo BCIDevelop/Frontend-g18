@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+ width: 100vw;
+ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+   width: 100%;
+}
+
+.header-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-nav img{
+    width: 50px;
+    aspect-ratio: 1/1;
+}
+.header-nav nav a{
+  
+    padding: 10px;
+}
+.header-nav  a{
+    text-decoration: none;
+}
+
+.header-nav__title{
+    font-size: 0.7rem;
+}
+figure{
+    text-align: center;
+}
+section{
+    margin-top: 30px;
+}
