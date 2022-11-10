@@ -6,37 +6,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./main.css">
 </head>
 <body>
 
  <div class="container">
     <form class="form-container" novalidate>
         <div class="input-container">
-            <input class="input" required="required" type="text">
+            <input autocomplete="name" class="input" required="required" type="text">
             <i></i>
-            <label class="label" for="">Nombre</label>
-            <span class="material-symbols-outlined">
+            <label id="label-1-error" class="label-text" for="">Nombre</label>
+            <span id="label-1-error" class="material-symbols-outlined">
                 error
             </span>
+            <h5 class="text-error">Please check your data</h5>
         </div>
-        <h5 class="text-error">Please check your data</h5>
+       
         <div class="input-container">
-            <input class="input" required="required" type="email">
+            <input  autocomplete="email" class="input" required="required" type="email">
             <i></i>
-            <label class="label" for="">Email</label>
-            <span class="material-symbols-outlined">
-                error
-            </span>
+          
+
+                <label id="label-2-error" class="label-email" for="">Email</label>
+                <span id="span-2-error" class="material-symbols-outlined">
+                    error
+                </span>
+         
+            <h5 class="text-error">Please check your data</h5>
         </div>
-        <h5 class="text-error">Please check your data</h5>
+        <div class="input-container">
+            <input autocomplete="new-password" class="input" required="required" type="password">
+            <i></i>
+          
+
+                <label id="label-3-error" class="label-password" for="">Password</label>
+                <span id="span-3-error" class="material-symbols-outlined">
+                    error
+                </span>
+         
+            <h5 class="text-error">Please check your data</h5>
+        </div>
+       
         <button class="btn-submit" type="submit">Submit</button>
+        <fb:login-button 
+        scope="public_profile,email"
+        onlogin="checkLoginState();">
+        </fb:login-button>
        
         </form>
+        <div id="g_id_onload"
+        data-client_id="59883366973-8842rsj1goff2k2cksor8ctquiuu99dd.apps.googleusercontent.com"
+        data-login_uri="http://localhost:3000/loginGmail"
+        data-auto_prompt="false">
+     </div>
+     <div class="g_id_signin"
+        data-type="standard"
+        data-size="large"
+        data-theme="outline"
+        data-text="sign_in_with"
+        data-shape="rectangular"
+        data-logo_alignment="left">
+     </div>
 </div>
             
-
-
+    
+<script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '838106910556522',
+        cookie     : true,
+        xfbml      : true,
+        version    : 'v15.0'
+      });
+        
+      FB.AppEvents.logPageView();   
+        
+    };
+  
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "https://connect.facebook.net/en_US/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script >
+  
+        window.onload = function () {
+            
+                  window.google.accounts.id.initialize({
+                    client_id: "59883366973-8842rsj1goff2k2cksor8ctquiuu99dd.apps.googleusercontent.com",
+                    callback: callback()
+                  });
+                  
+                }
+        
+        
+        </script>
    <script src="./main.js"></script> 
+   <script src="./facebook.js"></script>
 </body>
 </html>
