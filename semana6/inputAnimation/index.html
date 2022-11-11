@@ -7,8 +7,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
     <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v15.0&appId=838106910556522&autoLogAppEvents=1" nonce="ci2R4Hzo"></script>
 
  <div class="container">
     <form class="form-container" novalidate>
@@ -48,49 +50,32 @@
         </div>
        
         <button class="btn-submit" type="submit">Submit</button>
-        <fb:login-button 
-        scope="public_profile,email"
-        onlogin="checkLoginState();">
-        </fb:login-button>
+       
        
         </form>
-        <div id="g_id_onload"
-        data-client_id="59883366973-8842rsj1goff2k2cksor8ctquiuu99dd.apps.googleusercontent.com"
-        data-login_uri="http://localhost:3000/loginGmail"
-        data-auto_prompt="false">
-     </div>
-     <div class="g_id_signin"
+        <div class="social-container">
+            <div class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div>    
+
+      <div class="social-gmail">
+
+          <div id="g_id_onload"
+          data-client_id="867773923360-1o9vafk85bmvsnh2oeebjg7v7ks73us9.apps.googleusercontent.com"
+         
+          data-auto_prompt="false">
+        </div>
+        <div class="g_id_signin"
         data-type="standard"
         data-size="large"
         data-theme="outline"
         data-text="sign_in_with"
         data-shape="rectangular"
         data-logo_alignment="left">
-     </div>
+    </div>
+</div>     
 </div>
-            
+
+</div>
     
-<script>
-    window.fbAsyncInit = function() {
-      FB.init({
-        appId      : '838106910556522',
-        cookie     : true,
-        xfbml      : true,
-        version    : 'v15.0'
-      });
-        
-      FB.AppEvents.logPageView();   
-        
-    };
-  
-    (function(d, s, id){
-       var js, fjs = d.getElementsByTagName(s)[0];
-       if (d.getElementById(id)) {return;}
-       js = d.createElement(s); js.id = id;
-       js.src = "https://connect.facebook.net/en_US/sdk.js";
-       fjs.parentNode.insertBefore(js, fjs);
-     }(document, 'script', 'facebook-jssdk'));
-  </script>
   <script src="https://accounts.google.com/gsi/client" async defer></script>
     <script >
   
@@ -107,5 +92,6 @@
         </script>
    <script src="./main.js"></script> 
    <script src="./facebook.js"></script>
+   <script src="./gmail.js"></script>
 </body>
 </html>
